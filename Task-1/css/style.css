@@ -6,4 +6,16 @@
 .new-img{
     width: 400px;
     height: 200px;
+    position: absolute;
+}
+
+.close{
+    position: absolute;
+    left: 170px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/close-512.png");
+    background-size: cover;
+    display:none;
 }

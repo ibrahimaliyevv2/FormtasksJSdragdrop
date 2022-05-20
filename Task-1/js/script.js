@@ -1,5 +1,6 @@
 let fileInput = document.getElementById('fileInput');
-let uploadImg = document.getElementById("upload-image")
+let uploadImg = document.getElementById("upload-image");
+let closeBtn = document.getElementById("close");
 
 fileInput.addEventListener('change', function(){
     [...this.files].forEach(file=>{
@@ -27,4 +28,9 @@ fileInput.addEventListener('change', function(){
 
 uploadImg.addEventListener('click', function(){
     fileInput.click();
+})
+
+closeBtn.addEventListener("click", function(){
+    newImage.style.backgroundImage="none"
+    closeBtn.style.display='none';
 })
